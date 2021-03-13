@@ -5,3 +5,27 @@
     display: flex;
     justify-content: center;
 } */
+body{
+    background-color: #9fffcb;
+}
+.bg-green{
+    background-color: #004e64;
+}
+.greenText{
+    color:#004e64;
+}
+.card{
+    border: 2px solid #004e64;
+    background-color: #9fffcb;
+}
+#addTxt{
+    color:#004e64;
+}
+.effect:hover{
+    background-color: #9fffcb;
+    color: #004e64;
+}
+.effect:focus{
+    background-color: #004e64;
+    color: white;
+}

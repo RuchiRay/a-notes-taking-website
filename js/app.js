@@ -32,9 +32,9 @@ function showNotes() {
     notesObj.forEach(function (element, index) {
         html += `<div class="notesCard my-2 mx-2 card" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">Note ${index + 1}</h5>
-            <p class = "card-text"> ${element} </p>
-            <button id = "${index}" onclick = "deleteNote(this.id)" class="btn btn-primary">Delete note</button>
+            <h5 class="card-title greenText">Note ${index + 1}</h5>
+            <p class = "card-text greenText"> ${element} </p>
+            <button id = "${index}" onclick = "deleteNote(this.id)" class="btn btn-primary bg-green effect ">Delete note</button>
         </div>
     </div>`
     });
@@ -43,7 +43,7 @@ function showNotes() {
         notesElm.innerHTML = html
     }
     else {
-        notesElm.innerHTML = `<h2>Nothing to show ! use "add notes " section to add notes</h2>`
+        notesElm.innerHTML = `<h2 class = "greenText">Nothing to show ! use "add notes " section to add notes</h2>`
     }
 }
 // function to delete note
